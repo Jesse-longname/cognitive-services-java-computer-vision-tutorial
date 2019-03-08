@@ -6,11 +6,11 @@ This tutorial shows the features of the Microsoft Cognitive Services Computer Vi
 
 ### Installation
 
-1. Download the project as a .zip file by clicking on the **Clone or download** button, then clicking on **Download ZIP**. There is no need to extract the contents of the .zip file because NetBeans will import the project from the .zip file.
-1. In NetBeans, import the project by using **File** > **Import project** > **From ZIP**. The **Import Project(s) from ZIP** dialog will appear.
-1. For **Zip File**, browse to locate the .zip file downloaded from github.com.
-1. For **Folder**, browse to locate the folder where you want to put the new NetBeans project.
-1. Click the **Import** button. The project will be imported into NetBeans.
+1. Download the project as a .zip file by clicking on the **Clone or download** button, then clicking on **Download ZIP**.
+1. Once the project is downloaded, extract it.
+1. Open IntelliJ.
+1. In IntelliJ, select **File** > **Open**, then navigate to the folder you just extracted files into.
+1. Select the **Computer Vision** folder and click **OK**.
 
 ## Instructions
 
