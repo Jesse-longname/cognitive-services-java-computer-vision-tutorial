@@ -710,7 +710,7 @@ public class MainFrame extends javax.swing.JFrame {
         int bImageWidth = bImage.getWidth();
         int labelHeight = label.getHeight();
         int labelWidth = label.getWidth();
-        
+
         // Does this need to be scaled?
         if (labelHeight >= bImageHeight && labelWidth >= bImageWidth) {
             // If not, display the image and return.
@@ -718,13 +718,13 @@ public class MainFrame extends javax.swing.JFrame {
             label.setIcon(image);
             return;
         }
-        
+
         // Calculate the new width and height for the image.
         int newHeight;
         int newWidth;
         double bImageAspect = (double)bImageHeight / (double)bImageWidth;
         double labelAspect = (double)labelHeight / (double)labelWidth;
-        
+
         if (bImageAspect > labelAspect) {
             newHeight = labelHeight;
             newWidth = (int)(((double)labelHeight / (double)bImageHeight) * (double)bImageWidth);
@@ -732,17 +732,17 @@ public class MainFrame extends javax.swing.JFrame {
             newWidth = labelWidth;
             newHeight = (int)(((double)labelWidth / (double)bImageWidth) * (double)bImageHeight);
         }
-        
+
         // Create a new image scaled to the correct size.
         Image newImage = bImage.getScaledInstance(newWidth, newHeight, Image.SCALE_SMOOTH);
-        
+
         // Display the scaled image.
         ImageIcon labelImage = new ImageIcon(newImage);
         label.setIcon(labelImage);
         label.validate();
         label.repaint();
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -750,7 +750,7 @@ public class MainFrame extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
